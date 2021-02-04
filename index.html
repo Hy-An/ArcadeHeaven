@@ -14,11 +14,20 @@
       }
       .menu {
         background: url(../HTML-Template-Repository/assets/arcades.jpeg);
+        background-position: center;
+        background-size: cover;
         font-size: 40px;
       }
 
       .menuList {
         font-size: 20px;
+      }
+      .footer{
+          background: url(../HTML-Template-Repository/assets/Game-over-2.png);
+          background-position: center;
+          background-size: cover;
+          font-size: 15px;
+         
       }
     </style>
     <!-- Navigation Bar -->
@@ -47,6 +56,7 @@
         negocio que revolucionó el mundo del entretenimiento.
       </h3>
     </header>
+    <hr>
 
     <!-- Main section -->
     <main>
@@ -315,10 +325,23 @@
         </p>
       </div>
     </main>
+    <hr>
 
     <!-- Footer section -->
-    <footer>
-      <!-- The end of the page, where useful links are and some info about the company -->
+    <footer class="footer">
+      <label for="user">Nombre</label>
+      <input type="text" id="user" name="user" placeholder="Ingresa tu Nombre"/>
+
+      <label for="email">Correo Electronico</label>
+      <input  type="text" id="email" name="email" placeholder="Ingresa tu Correo Electronico"/>
+
+      <label for="mensaje">Escribe tu comentario</label>
+      <textarea name="mensaje" id="mensaje"></textarea>
+      <button>Enviar</button>
+      <hr>
+        <p>Esta pagina es solo a modo ilustrativo, todos los derechos de los elementos publicados pertenecen a su autor y/o compañia.</p>
+        <p>&copy;Arcade Heaven │ Todos los Derechos Reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
