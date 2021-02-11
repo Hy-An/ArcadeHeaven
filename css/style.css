@@ -9,7 +9,10 @@ body {
   overflow-x: hidden;
   font-family: monospace, sans-serif;
 }
-
+p {
+  font-size: 15px;
+}
+/*nav/menu*/
 #nav-bar {
   position: relative;
   width: 100%;
@@ -19,8 +22,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
-  background: rgb(31, 39, 39);
+  height: 70px;
+  background: black;
+
   font-family: "Press Start 2P", cursive;
 
   display: flex;
@@ -33,7 +37,6 @@ body {
 }
 .menu .logo-box h1 {
   font-size: 40px;
-  font-weight: 400;
 }
 
 .menu .list {
@@ -49,10 +52,12 @@ body {
   padding: 8px;
   font-size: 15px;
 }
+/*header*/
+
 .img-header {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   background-image: url(../assets/arcades.jpeg);
   background-attachment: fixed;
   background-position: center;
@@ -70,35 +75,142 @@ body {
   align-items: center;
   flex-direction: column;
 }
-p {
-  font-size: 15px;
-}
+/*main*/
+
 .content {
   width: 100%;
-  margin-top: 120px;
+  margin-top: 0px;
 }
-
-.content .fighting {
-  width: 45%;
+.back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/Galaxianback.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.content .game {
+  width: 100%;
   margin: 20px;
 }
-.content .fighting .img-game {
+.content .game .img-game {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
-.content .fighting .img-game img {
-  width: 400px;
+
+.content .game .img-game img {
+  width: 500px;
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
   cursor: pointer;
 }
 
+/*footer*/
+
 .footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
   background: url(../assets/Game-over-2.png);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+.footer .deg-ftr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.footer .ejeftr {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.footer .ftr-content {
+  width: 90%;
+  padding-top: 100px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.footer .ftr-content .ftr-title {
+  width: 50%;
+  margin: auto;
+  border: 2px solid aquamarine;
+  padding: 20px;
+}
+.footer .ftr-content .ftr-title h2 {
+  text-align: center;
+  color: aquamarine;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.footer .ftr-content .ftr-title hr {
+  width: 80%;
+  margin: auto;
+}
+.footer .ftr-content .coment-content {
+  width: 60%;
+  background: none;
+  border: 2px solid none;
+  margin: 50px auto;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+.footer .ftr-content .coment-content #coment {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .ftr-content .coment-content #coment label {
+  text-align: center;
+  color: aquamarine;
+  font-size: 22px;
+  margin: 30px 0px 10px 0px;
+}
+.footer .ftr-content .coment-content #coment input {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  color: black;
+}
+.footer .ftr-content .coment-content #coment textarea {
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  outline: none;
   font-size: 15px;
+  padding: 20px;
+}
+.footer .ftr-content .coment-content #coment .send {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+.footer .ftr-content .coment-content #coment .send button {
+  width: 150px;
+  height: 40px;
+  background: black;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  color: aquamarine;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
 }
