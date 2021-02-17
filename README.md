@@ -1,3 +1,3 @@
 Practica
-Page name : "Arcade Heaver"
+Page name : "Arcade Heaven"
 made by Luis Ramirez
